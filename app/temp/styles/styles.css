@@ -709,10 +709,17 @@ img {
 		}
 
 .section-title{
-	font-size: 3.75rem;
+	font-size: 2.55rem;
 	font-weight: 300;
 	text-align: center;
 }
+
+@media(min-width: 530px){
+
+.section-title{
+		font-size: 3.75rem
+}
+	}
 
 .section-title strong{
 		font-weight: 500;
@@ -720,6 +727,18 @@ img {
 
 .section-title__icon{
 		padding-right: .8rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+@media(min-width: 530px){
+
+.section-title__icon{
+			margin-right: .5rem;
+			margin-left: 0;
+			display: inline-block
+	}
 	}
 
 .feature-item{
