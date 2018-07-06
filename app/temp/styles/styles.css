@@ -555,10 +555,10 @@ img {
 .wrapper{
 	overflow: hidden;
 	padding-left: 18px;
-	padding-right: 18px;
-	max-width: 1000px;
+	padding-rigt: 18px;
+	max-width: 1236px;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; 
 }
 
 .wrapper-medium{
@@ -652,6 +652,8 @@ img {
 	}
 
 .row{
+	margin-left: auto;
+	margin-right: auto;
 	content: "";
 	clear: both;
 	display: table;
@@ -661,8 +663,16 @@ img {
 		margin-right: -65px;
 	}
 
+.row--gutter-large{
+		margin-right: 100px;
+	}
+
 .row--gutter> div{
 		padding-right: 65px;
+	}
+
+.row--gutter-large> div{
+		padding-left: 100px;
 	}
 
 @media(min-width: 800px){
@@ -670,13 +680,18 @@ img {
 			float: left;
 			width: 33.33%;
 		}
+		.row__medium_4--larger{
+			float: 39%;
+		}
+		.row__medium_6{
+			float: left;
+			width: 50%;
+		}
 		.row__medium_8{
 			float: left;
 			width: 66.66%;
 		}
-		.row__medium_4--larger{
-			float: 39%;
-		}
+
 		.row__medium_8--smaller{
 			float: 61%;
 		}
@@ -685,10 +700,87 @@ img {
 .generic-content-container p {
 		line-height: 1.65rem;
 		font-size: 1.125rem;
-		margin: 1.8rem 0;
+		margin: 0 0 1.8rem 0;
 	}
 
 .generic-content-container p a {
 		font-weight: 700;
-		color: #d59541
+		color: #d59541;
 		}
+
+.section-title{
+	font-size: 2.55rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+@media(min-width: 530px){
+
+.section-title{
+		font-size: 3.75rem
+}
+	}
+
+.section-title strong{
+		font-weight: 500;
+	}
+
+.section-title__icon{
+		padding-right: .8rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+		margin-bottom: 0.6rem;
+	}
+
+@media(min-width: 530px){
+
+.section-title__icon{
+			margin-right: .5rem;
+			margin-left: 0;
+			display: inline-block;
+			margin-bottom: 0
+	}
+	}
+
+.feature-item{
+	position: relative;
+	padding-bottom: 2.5rem;
+}
+
+@media(min-width: 530px){
+
+.feature-item{
+		padding-left: 94px
+}
+	}
+
+.feature-item__icon{
+		display: block;
+		margin: 0 auto;
+	}
+
+@media(min-width: 530px){
+
+.feature-item__icon{
+			position: absolute;
+			left:   0
+	}
+	}
+
+.feature-item__title{
+		font-size: 1.6rem;
+		font-weight: 300;
+		margin-top: .7em;
+		text-align: center;
+		margin-bottom: .8rem;
+	}
+
+@media(min-width: 530px){
+
+.feature-item__title{
+			margin-top: 1em;
+			font-size: 1.875rem;
+			text-align: left
+	}
+	}
